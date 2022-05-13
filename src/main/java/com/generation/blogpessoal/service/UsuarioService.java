@@ -20,9 +20,10 @@ public class UsuarioService {
 	@Autowired
 	private UsuarioRepository usuarioRepository;
 
+	//cadastro de usuario
 	public Optional<Usuario> cadastrarUsuario(Usuario usuario) {
 
-		if (usuarioRepository.findByUsuario(usuario.getUsuario()).isPresent())
+		if (usuarioRepository.findByUsuario(usuario.getUsuario()).isPresent()) // não permite usuários duplicados
 			return Optional.empty();
 		
 		usuario.setSenha(criptografarSenha(usuario.getSenha()));
