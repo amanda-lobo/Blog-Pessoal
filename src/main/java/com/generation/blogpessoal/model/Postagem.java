@@ -16,25 +16,23 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-@Entity //essa classe vai criar uma entidade no projeto -> create table
-@Table(name = "tb_postagens") //definir o nome da tabela -> tb_postagens
-
+@Entity
+@Table(name = "tb_postagens") 
 public class Postagem {
-	
-	@Id // indica que esse atibuto vai ser a chave primária -> primary key (id)
-	@GeneratedValue(strategy = GenerationType.IDENTITY)//como vai ser gerada a chave -> auto_increment
-	
-	private Long id;
-	
-	@NotBlank(message = "O atributo título é obrigatório!") //Não permite nulo -> NotNull permite espaço branco | NotBlank não permite espaço em branco
-	@Size(min = 5, max = 100, message = "O atributo título deve conter no minimo 5 e no máximo 100 caracteres") //define o tamanho minimo e max da string -> add junto do MySQL
-	private String titulo;
-	
-	@NotNull(message = "O atributo texto é obrigatório!")
-	@Size(min = 10, max = 1000, message = "O atributo texto deve conter no minimo 10 e no máximo 1000 caracteres")
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY) 
+	private Long id; 
+
+	@NotBlank(message = "O atributo título é Obrigatório e não pode utilizar espaços em branco!") 
+	@Size(min = 5, max = 100, message = "O atributo título deve conter no mínimo 05 e no máximo 100 caracteres")
+	private String titulo; 
+
+	@NotNull(message = "O atributo texto é Obrigatório!")
+	@Size(min = 10, max = 1000, message = "O atributo texto deve conter no mínimo 10 e no máximo 500 caracteres")
 	private String texto;
-	
-	@UpdateTimestamp //toda vez que for criada uma nova postagem ou qnd for atualizar ele grava a hora e a data no db
+
+	@UpdateTimestamp
 	private LocalDateTime data;
 
 	@ManyToOne
