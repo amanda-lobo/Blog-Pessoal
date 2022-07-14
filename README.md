@@ -25,7 +25,7 @@
 </div>
 
 <div align="center" style="display: inline_block"><br>
-<img src="https://i.imgur.com/oNOYdZp.png" width=400px height=500px>
+<a href="https://devgirls.netlify.app/" target="_blank"><img src="https://i.imgur.com/oNOYdZp.png" width=400px height=500px></a>
 
 </div>
 
@@ -48,10 +48,6 @@
   <img align="center" alt="Amanda-Spring" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg">
   <img align="center" alt="Amanda-MySQL" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg">
   <img align="center" alt="Amanda-HerokuApp" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/heroku/heroku-original.svg">
-  <img align="center" alt="Amanda-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-  <img align="center" alt="Amanda-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-  <img align="center" alt="Amanda-Ts" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">
-  <img align="center" alt="Amanda-React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
 </div>
 
 ## Desenvolvedora
